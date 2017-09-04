@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    if([WKWebView class]) {
+//        ViewController* WKWebViewExampleController = [[ViewController alloc] init];
+//        WKWebViewExampleController.tabBarItem.title             = @"WKWebView";
+//        [tabBarController addChildViewController:WKWebViewExampleController];
+//    }
     return YES;
 }
 

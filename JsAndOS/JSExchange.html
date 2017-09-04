@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Text JavaScript 交互</title>
+        
+        <script type="text/javascript">
+
+        // 没有参数，又不需要回调可以这样写
+        function jumpios() {
+            var message = {
+                'method' : 'hello',
+                'param1' : 'liuyanwei',
+            };
+            window.webkit.messageHandlers.webViewApp.postMessage(message);
+        }
+        
+        </script>
+        
+	</head>
+    
+	<body>
+            <input style="font-size: 20px" type="submit" value="点击调用OC" onclick="jumpios()" />
+	</body>
+</html>

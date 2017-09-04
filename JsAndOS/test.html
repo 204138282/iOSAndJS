@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            
+            <script type="text/javascript">
+                function jumpios_function1() {
+                    var message = "我是HTML界面的function（111）";
+                    window.webkit.messageHandlers.jumpios_function1.postMessage(message);
+                }
+            
+            function jumpios_function2() {
+                var message = "我是HTML界面的function（222）";
+                window.webkit.messageHandlers.jumpios_function2.postMessage(message);
+            }
+            
+            function jumpios_function3() {
+                var message = "我是HTML界面的function（333）";
+                window.webkit.messageHandlers.jumpios_function3.postMessage(message);
+            }
+            
+            function popToRN_function() {
+                var message = "pop返回RN界面";
+                window.webkit.messageHandlers.popToRN_function.postMessage(message);
+            }
+            </script>
+            
+            </head>
+    
+    <!--  <style type="text/css">-->
+    <!--    #button {-->
+    <!--      margin-top: 100,-->
+    <!--      width: 100,-->
+    <!--      height: 50,-->
+    <!--      font-size: 30px-->
+    <!--    }-->
+    <!--  </style>-->
+    
+    <body>
+        <input style="font-size: 30px" type="submit" value="调用func(+++++++111++++++++)" onclick="jumpios_function1()" /></br></br>
+        <input style="font-size: 30px" type="submit" value="调用func(+++++++222++++++++)" onclick="jumpios_function2()" /></br></br>
+        <input style="font-size: 30px" type="submit" value="调用func(+++++++333++++++++)" onclick="jumpios_function3()" /></br></br>
+        <input style="font-size: 30px" type="submit" value="pop返回" onclick="popToRN_function()" />
+    </body>
+</html>
